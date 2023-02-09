@@ -66,22 +66,27 @@ function App() {
               <Tab label="About Me" {...a11yProps(0)} />
               <Tab label="Research & Development" {...a11yProps(1)} />
               <Tab label="Medical Device Development" {...a11yProps(2)} />
-              <Tab label="Coaching & Leadership" {...a11yProps(3)} />
-              <Tab label="Contact Me" {...a11yProps(4)} />
+              <Tab label="Lab Automation" {...a11yProps(3)} />
+              <Tab label="Coaching & Leadership" {...a11yProps(4)} />
+              <Tab label="Contact Me" {...a11yProps(5)} />
             </Tabs>
           </Box>
-          <TabPanel value={value} index={0}>
-          </TabPanel>
+          <TabPanel value={value} index={0}></TabPanel>
           <TabPanel value={value} index={1}>
-            <Typography variant="h5">Developing Incredible Solutions</Typography>
+            <Typography variant="h5">
+              Developing Incredible Solutions
+            </Typography>
           </TabPanel>
           <TabPanel value={value} index={2}>
             Medical Device Development and Global Compliance
           </TabPanel>
           <TabPanel value={value} index={3}>
-            Building Incredible Teams
+            Lab Automation
           </TabPanel>
           <TabPanel value={value} index={4}>
+            Building Incredible Teams
+          </TabPanel>
+          <TabPanel value={value} index={5}>
             Contact Duane
           </TabPanel>
         </Grid>

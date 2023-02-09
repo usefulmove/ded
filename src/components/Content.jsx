@@ -26,7 +26,7 @@ function Content() {
         </Grid>
       </Grid>
       <Grid item xs={12}>
-        <img src={signature} height={50} />
+        <img src={signature} height={60} />
       </Grid>
     </Grid>
   );
