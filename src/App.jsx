@@ -71,24 +71,28 @@ function App() {
               <Tab label="Contact Me" {...a11yProps(5)} />
             </Tabs>
           </Box>
-          <TabPanel value={value} index={0}></TabPanel>
-          <TabPanel value={value} index={1}>
-            <Typography variant="h5">
+          <TabPanel value={value} index={0}>
+          </TabPanel>
+          <TabPanel value={value} index={1} className="selection-heading">
+            <Typography variant="h6">
               Developing Incredible Solutions
             </Typography>
           </TabPanel>
-          <TabPanel value={value} index={2}>
-            Medical Device Development and Global Compliance
+          <TabPanel value={value} index={2} className="selection-heading">
+            <Typography variant="h6">
+              Medical Device Development and Global Compliance
+            </Typography>
           </TabPanel>
-          <TabPanel value={value} index={3}>
-            Lab Automation
+          <TabPanel value={value} index={3} className="selection-heading">
+            <Typography variant="h6">Lab Automation</Typography>
           </TabPanel>
-          <TabPanel value={value} index={4}>
-            Building Incredible Teams
+          <TabPanel value={value} index={4} className="selection-heading">
+            <Typography variant="h6">Building Incredible Teams</Typography>
           </TabPanel>
-          <TabPanel value={value} index={5}>
-            Contact Duane
+          <TabPanel value={value} index={5} className="selection-heading">
+            <Typography variant="h6">Contact Duane</Typography>
           </TabPanel>
+          <br />
         </Grid>
       </Grid>
       <Grid item container xs={12} spacing={2} padding={2}>
