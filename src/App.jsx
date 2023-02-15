@@ -43,7 +43,6 @@ function a11yProps(index) {
 
 function App() {
   const [count, setCount] = useState(0);
-
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -66,12 +65,21 @@ function App() {
               <Tab label="About Me" {...a11yProps(0)} />
               <Tab label="Research & Development" {...a11yProps(1)} />
               <Tab label="Medical Device Development" {...a11yProps(2)} />
-              <Tab label="Lab Automation" {...a11yProps(3)} />
+              <Tab label="Laboratory Automation" {...a11yProps(3)} />
               <Tab label="Coaching & Leadership" {...a11yProps(4)} />
-              <Tab label="Contact Me" {...a11yProps(5)} />
+              <Tab label="Experience" {...a11yProps(5)} />
+              <Tab label="Contact Me" {...a11yProps(6)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
+            <Grid item container xs={12} spacing={2} padding={2}>
+              <Grid item xs={6}>
+                <Content />
+              </Grid>
+              <Grid item xs={6}>
+                <Board />
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value={value} index={1} className="selection-heading">
             <Typography variant="h6">
@@ -90,17 +98,12 @@ function App() {
             <Typography variant="h6">Building Incredible Teams</Typography>
           </TabPanel>
           <TabPanel value={value} index={5} className="selection-heading">
-            <Typography variant="h6">Contact Duane</Typography>
+            <Typography variant="h6">Why me?</Typography>
+          </TabPanel>
+          <TabPanel value={value} index={6} className="selection-heading">
+            <Typography variant="h6">How can I help?</Typography>
           </TabPanel>
           <br />
-        </Grid>
-      </Grid>
-      <Grid item container xs={12} spacing={2} padding={2}>
-        <Grid item xs={6}>
-          <Content />
-        </Grid>
-        <Grid item xs={6}>
-          <Board />
         </Grid>
       </Grid>
       <Grid item xs={12}>
