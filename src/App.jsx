@@ -21,7 +21,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          {children}
         </Box>
       )}
     </div>
@@ -61,6 +61,7 @@ function App() {
               onChange={handleChange}
               textColor="primary"
               indicatorColor="primary"
+              centered
             >
               <Tab label="About Me" {...a11yProps(0)} />
               <Tab label="Research & Development" {...a11yProps(1)} />
@@ -72,7 +73,7 @@ function App() {
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <Grid item container xs={12} spacing={2} padding={2}>
+            <Grid item container spacing={2} padding={2} alignItems="center">
               <Grid item xs={6}>
                 <Content />
               </Grid>

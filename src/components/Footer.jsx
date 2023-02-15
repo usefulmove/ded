@@ -1,19 +1,36 @@
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
+import {
+  AlternateEmailRounded,
+  AccountCircleOutlined,
+  CodeSharp,
+  CloudDownloadSharp,
+} from "@mui/icons-material";
+import DeIconButton from "./DeIconButton";
 
 function Footer() {
   return (
-    <Grid container justifyContent="center" alignItems="center" spacing={2} xs={6}>
+    <Grid
+      container
+      justifyContent="space-around"
+      alignItems="center"
+      spacing={2}
+    >
       <Grid item>
-        <Button variant="contained" size="small">Contact Me</Button>
+        <DeIconButton icon={AccountCircleOutlined} />
       </Grid>
       <Grid item>
-        <Button variant="contained" size="small">Resume</Button>
+        <DeIconButton icon={AlternateEmailRounded} />
       </Grid>
       <Grid item>
-        <Button variant="contained" size="small" onClick={() => alert("I understand")}>Complain about Xóchitl</Button>
+        <DeIconButton icon={CodeSharp} />
+      </Grid>
+      <Grid item>
+        <DeIconButton icon={CloudDownloadSharp} />
       </Grid>
     </Grid>
   );
 }
 
 export default Footer;
+
+/* LinkedIn email GitHub */

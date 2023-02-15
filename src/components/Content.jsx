@@ -5,7 +5,7 @@ import { Grid, Typography } from "@mui/material";
 function Content() {
   return (
     <Grid container spacing={8} padding={5}>
-      <Grid container xs={12}>
+      <Grid container>
         <Grid item xs={2}>
         </Grid>
         <Grid item xs={8}>
