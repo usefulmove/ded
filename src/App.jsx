@@ -68,8 +68,8 @@ function App() {
               <Tab label="Medical Device Development" {...a11yProps(2)} />
               <Tab label="Laboratory Automation" {...a11yProps(3)} />
               <Tab label="Coaching & Leadership" {...a11yProps(4)} />
-              <Tab label="Experience" {...a11yProps(5)} />
-              <Tab label="Contact Me" {...a11yProps(6)} />
+              <Tab label="Work Experience" {...a11yProps(5)} />
+              <Tab label="Get In Touch" {...a11yProps(6)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
