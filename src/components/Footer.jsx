@@ -7,6 +7,8 @@ import {
 } from "@mui/icons-material";
 import DeIconButton from "./DeIconButton";
 
+/* LinkedIn Email GitHub Resume */
+
 function Footer() {
   return (
     <Grid
@@ -16,18 +18,35 @@ function Footer() {
       spacing={2}
     >
       <Grid item>
-        <DeIconButton icon={AccountCircleOutlined} />
+        <IconButton
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/dedmonds/", "_blank");
+          }}
+        >
+          <DeIconButton icon={AccountCircleOutlined} />
+        </IconButton>
       </Grid>
       <Grid item>
-        <DeIconButton icon={AlternateEmailRounded} />
-      </Grid>
-      <Grid item>
-        <DeIconButton icon={CodeSharp} />
+        <IconButton onClick={() => {}}>
+          <DeIconButton icon={AlternateEmailRounded} />
+        </IconButton>
       </Grid>
       <Grid item>
         <IconButton
           onClick={() => {
-            window.open("../public/dedmonds_resume.pdf", "_blank");
+            window.open("https://github.com/usefulmove", "_blank");
+          }}
+        >
+          <DeIconButton icon={CodeSharp} />
+        </IconButton>
+      </Grid>
+      <Grid item>
+        <IconButton
+          onClick={() => {
+            window.open(
+              "https://github.com/usefulmove/o/raw/main/dedmonds_resume.pdf",
+              "_blank"
+            );
           }}
         >
           <DeIconButton icon={CloudDownloadSharp} />
@@ -38,5 +57,3 @@ function Footer() {
 }
 
 export default Footer;
-
-/* LinkedIn email GitHub */
