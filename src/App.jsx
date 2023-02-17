@@ -52,7 +52,7 @@ function App() {
       </Grid>
       <Grid item xs={12}>
         <Grid item xs={12}>
-          <Box sx={{ borderBottom: 2, borderColor: "divider" }}>
+          <Box sx={{ borderBottom: 3, borderColor: "divider" }}>
             <Tabs
               value={value}
               onChange={handleChange}
