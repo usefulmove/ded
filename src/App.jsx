@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 import Board from "./components/Board";
-import { Card, Grid, Typography, Box, Tab, Tabs } from "@mui/material";
+import { Card, Grid, Box, Tab, Tabs } from "@mui/material";
 import randd from "./assets/randd.jpg";
 
 function TabPanel(props) {
@@ -145,8 +145,11 @@ function App() {
               </Card>
             </center>
           </TabPanel>
-          <TabPanel value={value} index={6} className="selection-heading">
-          </TabPanel>
+          <TabPanel
+            value={value}
+            index={6}
+            className="selection-heading"
+          ></TabPanel>
           <br />
         </Grid>
       </Grid>
