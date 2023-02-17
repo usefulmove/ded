@@ -5,7 +5,7 @@ function Board() {
   return (
     <Grid container>
       <Grid item xs={12}>
-        <img src={duane} height={"650vh"}/>
+        <img src={duane} height={"650vh"} />
       </Grid>
     </Grid>
   );

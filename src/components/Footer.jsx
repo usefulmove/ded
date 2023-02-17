@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, IconButton } from "@mui/material";
 import {
   AlternateEmailRounded,
   AccountCircleOutlined,
@@ -25,7 +25,13 @@ function Footer() {
         <DeIconButton icon={CodeSharp} />
       </Grid>
       <Grid item>
-        <DeIconButton icon={CloudDownloadSharp} />
+        <IconButton
+          onClick={() => {
+            window.open("../public/dedmonds_resume.pdf", "_blank");
+          }}
+        >
+          <DeIconButton icon={CloudDownloadSharp} />
+        </IconButton>
       </Grid>
     </Grid>
   );

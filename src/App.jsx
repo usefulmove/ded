@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Content from "./components/Content";
 import Board from "./components/Board";
 import { Grid, Typography, Box, Tab, Tabs } from "@mui/material";
+import randd from "./assets/randd.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -19,11 +20,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          {children}
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -86,6 +83,7 @@ function App() {
             <Typography variant="h6">
               Developing Incredible Solutions
             </Typography>
+            <img src={randd} height={"650px"} />
           </TabPanel>
           <TabPanel value={value} index={2} className="selection-heading">
             <Typography variant="h6">
