@@ -64,7 +64,11 @@ function App() {
                 "& button:hover": { color: "#0080ff" },
               }}
             >
-              <Tab label="About Me" {...a11yProps(0)} />
+              <Tab
+                label="About Me"
+                {...a11yProps(0)}
+                sx={{ color: "#555555" }}
+              />
               <Tab
                 label="Research & Development"
                 {...a11yProps(1)}
@@ -108,38 +112,40 @@ function App() {
             </Grid>
           </TabPanel>
           <TabPanel value={value} index={1} className="selection-heading">
-            <Typography variant="h6">
-              Developing Incredible Solutions
-            </Typography>
             <img src={randd} height={"650px"} />
           </TabPanel>
-          <TabPanel value={value} index={2} className="selection-heading">
-            <Typography variant="h6">
-              Medical Device Development and Global Compliance
-            </Typography>
-          </TabPanel>
-          <TabPanel value={value} index={3} className="selection-heading">
-            <Typography variant="h6">Lab Automation</Typography>
-          </TabPanel>
-          <TabPanel value={value} index={4} className="selection-heading">
-            <Typography variant="h6">Building Incredible Teams</Typography>
-          </TabPanel>
+          <TabPanel
+            value={value}
+            index={2}
+            className="selection-heading"
+          ></TabPanel>
+          <TabPanel
+            value={value}
+            index={3}
+            className="selection-heading"
+          ></TabPanel>
+          <TabPanel
+            value={value}
+            index={4}
+            className="selection-heading"
+          ></TabPanel>
           <TabPanel value={value} index={5} className="selection-heading">
-            <Typography variant="h6">Why me?</Typography>
-            <Card>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-            </Card>
+            <center>
+              <Card className="cora">
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </div>
+              </Card>
+            </center>
           </TabPanel>
           <TabPanel value={value} index={6} className="selection-heading">
-            <Typography variant="h6">How can I help?</Typography>
           </TabPanel>
           <br />
         </Grid>
