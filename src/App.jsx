@@ -1,25 +1,26 @@
 import * as React from "react";
-import { useState } from "react";
 import "./App.css";
+import { Grid } from "@mui/material";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Grid } from "@mui/material";
 import TabFrame from "./components/TabFrame";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <Grid container spacing={0} p={2}>
-      <Grid item xs={12}>
+    <Grid
+      container
+      direction="column"
+      spacing={0}
+      p={2}
+      style={{ minHeight: "100vh" }}
+    >
+      <Grid item xs style={{ flexGrow: 0 }}>
         <Header />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs style={{ flexGrow: 1 }}>
         <TabFrame />
-        <Grid item xs={12}>
-        </Grid>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs style={{ flexGrow: 0 }}>
         <Footer />
       </Grid>
     </Grid>
