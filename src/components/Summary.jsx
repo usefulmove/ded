@@ -8,17 +8,16 @@ function Summary() {
       <Grid container>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
-          <Typography variant="h6">
-            A seasoned product development professional with over two decades of
-            experience and a decade of expertise in the medical device and
-            laboratory automation industries. I am renowned for my ability to
-            foster strong relationships and effectively lead cross-functional
-            teams to deliver innovative solutions that enhance patient outcomes.
-            My diverse skill set encompasses business management, automation and
-            robotics, product design and development, verification and
-            validation testing, risk assessment, data analysis and
-            visualization, business intelligence, descriptive and predictive
-            analytics, quality control, and global compliance.
+          <Typography variant="h5">
+            Experienced product development professional with more than 20 years
+            of experience and 11 years in the medical device and lab automation
+            industries with a proven record of building relationships and
+            helping diverse, cross-functional teams deliver innovative solutions
+            to improve patient outcomes. Solid background in business
+            management, automation and robotics, design and development,
+            verification and validation testing, risk management, data analysis
+            and visualization, business intelligence, descriptive and predictive
+            analytics, quality management, and global compliance.
           </Typography>
         </Grid>
         <Grid item xs={2}></Grid>

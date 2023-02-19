@@ -2,7 +2,7 @@ import { Grid, IconButton } from "@mui/material";
 import {
   AlternateEmailRounded,
   AccountCircleOutlined,
-  CodeSharp,
+  GitHub,
   CloudDownloadSharp,
 } from "@mui/icons-material";
 import DeIconButton from "./DeIconButton";
@@ -37,7 +37,7 @@ function Footer() {
             window.open("https://github.com/usefulmove", "_blank");
           }}
         >
-          <DeIconButton icon={CodeSharp} />
+          <DeIconButton icon={GitHub} />
         </IconButton>
       </Grid>
       <Grid item>

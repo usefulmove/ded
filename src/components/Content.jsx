@@ -1,9 +1,11 @@
 import React from "react";
-import { Card, Tabs, Tab, Box } from "@mui/material";
-import PropTypes from "prop-types";
 import { useState } from "react";
+import { Box, Card, Tabs, Tab, Typography } from "@mui/material";
+import PropTypes from "prop-types";
 import randd from "../assets/randd.jpg";
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import MedDev from "./MedDev";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -34,7 +36,7 @@ function a11yProps(index) {
   };
 }
 
-function TabFrame() {
+function Content() {
   const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -87,11 +89,9 @@ function TabFrame() {
       <TabPanel value={value} index={1} className="selection-heading">
         <img src={randd} height={"650px"} />
       </TabPanel>
-      <TabPanel
-        value={value}
-        index={2}
-        className="selection-heading"
-      ></TabPanel>
+      <TabPanel value={value} index={2} className="selection-heading">
+        <MedDev />
+      </TabPanel>
       <TabPanel
         value={value}
         index={3}
@@ -102,29 +102,17 @@ function TabFrame() {
         index={4}
         className="selection-heading"
       ></TabPanel>
-      <TabPanel value={value} index={5} className="selection-heading">
-        <center>
-          <Card className="cora" elevation={6}>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-          </Card>
-        </center>
-      </TabPanel>
       <TabPanel
         value={value}
-        index={6}
+        index={5}
         className="selection-heading"
       ></TabPanel>
+      <TabPanel value={value} index={6} className="selection-heading">
+        <Contact />
+      </TabPanel>
       <br />
     </Box>
   );
 }
 
-export default TabFrame;
+export default Content;

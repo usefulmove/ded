@@ -11,7 +11,7 @@ function ProfessionalPhoto() {
         alignItems="center"
         justifyContent="center"
       >
-        <img src={duane} height={"100%"} width={"100%"} objectFit="contain" />
+        <img src={duane} width={"100%"} objectfit="contain" />
       </Grid>
     </Grid>
   );
