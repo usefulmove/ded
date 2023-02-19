@@ -8,9 +8,9 @@ function Summary() {
       <Grid container>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
-          <Typography variant="h5">
-            Experienced product development professional with more than 20 years
-            of experience and 11 years in the medical device and lab automation
+          <Typography variant="h5" align="center">
+            Experienced product development professional with more than 23 years
+            of experience and 14 years in the medical device and lab automation
             industries with a proven record of building relationships and
             helping diverse, cross-functional teams deliver innovative solutions
             to improve patient outcomes. Solid background in business
