@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, List, ListItem, ListItemIcon, Typography } from "@mui/material";
-import { Circle } from "@mui/icons-material";
+import { Commit } from "@mui/icons-material";
 
 function MedDev() {
   const listItems = [
@@ -32,7 +32,7 @@ function MedDev() {
           {listItems.map((item) => (
             <ListItem>
               <ListItemIcon>
-                <Circle fontSize="inherit" color="primary" />
+                <Commit fontSize="small" color="primary" />
               </ListItemIcon>
               <Typography variant="h6">{item}</Typography>
             </ListItem>
