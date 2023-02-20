@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, List, ListItem, ListItemIcon, Typography } from "@mui/material";
+import { Circle } from "@mui/icons-material";
 
 function MedDev() {
   const listItems = [
@@ -23,15 +24,20 @@ function MedDev() {
         <Typography variant="h6" align="left">
           I am able to provide design support services to help your organization
           advance your product development, product improvement and new product
-          introduction goals. Some of my key areas of focus are:
+          introduction goals. Key areas of focus are:
         </Typography>
       </Grid>
       <Grid item xs={12} lg={6}>
-        <ul>
+        <List>
           {listItems.map((item) => (
-            <li>{item}</li>
+            <ListItem>
+              <ListItemIcon>
+                <Circle fontSize="inherit" color="primary" />
+              </ListItemIcon>
+              <Typography variant="h6">{item}</Typography>
+            </ListItem>
           ))}
-        </ul>
+        </List>
       </Grid>
     </Grid>
   );
