@@ -43,7 +43,7 @@ function Content() {
   };
 
   return (
-    <Box sx={{ borderBottom: 3, borderColor: "divider" }}>
+    <Box sx={{ borderBottom: 0 }}>
       <Tabs
         value={value}
         onChange={handleChange}
