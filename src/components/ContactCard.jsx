@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Card, Grid, Toolbar, Typography } from "@mui/material";
+import { Card, Grid, Typography } from "@mui/material";
 import logo from "../assets/logo.png";
 
 function ContactCard() {
@@ -7,7 +7,7 @@ function ContactCard() {
     <Grid container>
       <Grid item xs={12}>
         <center>
-          <Card className="contact-card" elevation={6}>
+          <Card className="contact-card" elevation={6} sx={{ borderRadius: 3 }}>
             <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={5.9}>
                 <img src={logo} width={"100%"} objectfit="contain" />

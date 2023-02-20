@@ -8,6 +8,7 @@ import LabAuto from "./LabAuto";
 import Compliance from "./Compliance";
 import Experience from "./Experience";
 import ContactCard from "./ContactCard";
+import { GroupsSharp } from "@mui/icons-material";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -88,12 +89,15 @@ function Content() {
         <Experience />
       </TabPanel>
       <TabPanel value={value} index={5} className="selection-heading">
-        <br />
         <ContactCard />
         <br />
-        <Typography variant="body1" color="secondary">
+        <Typography variant="h6" color="secondary">
           Please contact me if you think I might be able to help your
           organization.
+        </Typography>
+        <br />
+        <Typography variant="h1" color="secondary">
+          <GroupsSharp fontSize="inherit" color="secondary" />
         </Typography>
       </TabPanel>
       <br />
