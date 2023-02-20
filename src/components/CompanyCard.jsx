@@ -34,7 +34,7 @@ function CompanyCard({ company }) {
         <List>
           <ListItem>
             <Accordion sx={{ flexGrow: 1 }}>
-              <AccordionSummary expandIcon={<ExpandMore color="primary" />}>
+              <AccordionSummary expandIcon={<ExpandMore color="secondary" />}>
                 <Typography variant="subtitle1" color="secondary">
                   Vice President of Engineering
                 </Typography>
@@ -45,12 +45,16 @@ function CompanyCard({ company }) {
                   Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                   eget.
                 </Typography>
+                <br />
+                <Typography color="grey" variant="body2">
+                  Sep 2021 - Aug 2022
+                </Typography>
               </AccordionDetails>
             </Accordion>
           </ListItem>
           <ListItem>
             <Accordion sx={{ flexGrow: 1 }}>
-              <AccordionSummary expandIcon={<ExpandMore color="primary" />}>
+              <AccordionSummary expandIcon={<ExpandMore color="secondary" />}>
                 <Typography variant="subtitle1" color="secondary">
                   Director of Automation
                 </Typography>
