@@ -8,7 +8,7 @@ function Summary() {
       <Grid container>
         <Grid item xs={2}></Grid>
         <Grid item xs={8}>
-          <Typography variant="h5" align="center">
+          <Typography variant="h5" align="center" color="secondary">
             Experienced product development professional with more than 23 years
             of experience and 14 years in the medical device and lab automation
             industries with a proven record of building relationships and

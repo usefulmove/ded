@@ -1,6 +1,12 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import CompanyCard from "./CompanyCard";
+import {
+  HealthAndSafety,
+  NordicWalking,
+  PrecisionManufacturing,
+  ScienceSharp,
+} from "@mui/icons-material";
 
 const summerbio = {
   company: "SummerBio",
@@ -90,19 +96,19 @@ function Experience() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={6} lg={4} xl={3}>
-        <CompanyCard experience={summerbio} />
+        <CompanyCard experience={summerbio} icon={ScienceSharp} />
       </Grid>
       <Grid item xs={12} md={6} lg={4} xl={3}>
-        <CompanyCard experience={jandj} />
+        <CompanyCard experience={jandj} icon={HealthAndSafety} />
       </Grid>
       <Grid item xs={12} md={6} lg={4} xl={3}>
-        <CompanyCard experience={ekso} />
+        <CompanyCard experience={ekso} icon={NordicWalking} />
       </Grid>
       <Grid item xs={12} md={6} lg={4} xl={3}>
-        <CompanyCard experience={agilent} />
+        <CompanyCard experience={agilent} icon={ScienceSharp} />
       </Grid>
       <Grid item xs={12} md={6} lg={4} xl={3}>
-        <CompanyCard experience={bpc} />
+        <CompanyCard experience={bpc} icon={PrecisionManufacturing} />
       </Grid>
     </Grid>
   );

@@ -11,9 +11,11 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { ExpandMore } from "@mui/icons-material";
+import { BusinessCenter, ExpandMore } from "@mui/icons-material";
 
-function CompanyCard({ experience }) {
+function CompanyCard({ experience, icon }) {
+  const CompanyIcon = icon;
+
   return (
     <Card elevation={6}>
       <center>
@@ -25,10 +27,11 @@ function CompanyCard({ experience }) {
                 component="div"
                 sx={{ flexGrow: 1 }}
                 align="left"
-                color="#ffffff"
+                color="secondary"
               >
                 {experience.company}
               </Typography>
+              <CompanyIcon color="secondary" />
             </Toolbar>
           </AppBar>
         </Box>
@@ -36,7 +39,7 @@ function CompanyCard({ experience }) {
           {experience.roles.map((role, index) => (
             <ListItem key={index}>
               <Accordion sx={{ flexGrow: 1 }} elevation={3}>
-                <AccordionSummary expandIcon={<ExpandMore color="white" />}>
+                <AccordionSummary expandIcon={<ExpandMore color="secondary" />}>
                   <Typography variant="subtitle1" color="secondary">
                     {role.title}
                   </Typography>

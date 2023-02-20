@@ -1,8 +1,10 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import TopicList from "./TopicList";
+import { MedicalServices } from "@mui/icons-material";
 
 function MedDev() {
+  const blurb = `I am able to provide design support services to help your organization advance your product development, product improvement and new product introduction goals. Key areas of focus are:`;
   const bullets = [
     "Design Controls",
     "Project planning and management including cost and project risk management",
@@ -17,12 +19,12 @@ function MedDev() {
     "Design transfer to production and continuous improvement Documentation of Design History Files, Technical Files (Technical Documentation), documentation in support of 510(k), CE mark, and other regulatory submissions",
     "Considerable knowledge of the expectations and requirements of FDA Title 21 CFR 820 (Quality System Regulation) and Medical Device Directive 93/42/EEC, as well as ISO 13485 (Quality Management System)",
   ];
-  const blurb = `I am able to provide design support services to help your organization advance your product development, product improvement and new product introduction goals. Key areas of focus are:`;
 
   return (
     <Grid container>
       <center>
         <Grid item xs={8}>
+          <MedicalServices fontSize="large" color="secondary" />
           <TopicList
             title="Medical Device Development"
             lead={blurb}

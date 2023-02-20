@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import TopicList from "./TopicList";
+import { PublicSharp } from "@mui/icons-material";
 
 function Compliance() {
   const bullets = [
@@ -20,6 +21,7 @@ function Compliance() {
     <Grid container>
       <center>
         <Grid item xs={8}>
+          <PublicSharp fontSize="large" color="secondary" />
           <TopicList
             title="Regulatory Compliance"
             lead={blurb}
