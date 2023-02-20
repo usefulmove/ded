@@ -29,12 +29,12 @@ function MedDev() {
     <Grid container justifyContent="center">
       <Grid item xs={12} lg={7}>
         <br />
-        <Typography variant="h4" gutterBottom="true">
+        <Typography variant="h4" gutterBottom={true}>
           Medical Device Development
         </Typography>
         <Divider />
         <br />
-        <Typography variant="h6" align="left" gutterBottom="true">
+        <Typography variant="h6" align="left" gutterBottom={true}>
           I am able to provide design support services to help your organization
           advance your product development, product improvement and new product
           introduction goals. Key areas of focus are:

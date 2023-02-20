@@ -1,18 +1,20 @@
 import React from "react";
-import { Card, Typography } from "@mui/material";
+import { Card, Divider, Typography } from "@mui/material";
 
 function Contact() {
   return (
     <center>
       <Card className="cora" elevation={6}>
-        <Typography variant="h5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <Typography variant="h4" color="primary" gutterBottom={true}>
+          Duane Edmonds
+        </Typography>
+        <Typography variant="h6" color="secondary" gutterBottom={true}>
+          2208 Carroll Street #102
+          <br />
+          Oakland, CA 94606
+        </Typography>
+        <Typography variant="h6" color="secondary">
+          duane@dedmonds.co
         </Typography>
       </Card>
     </center>
