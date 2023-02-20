@@ -1,5 +1,12 @@
 import React from "react";
-import { Grid, List, ListItem, ListItemIcon, Typography } from "@mui/material";
+import {
+  Divider,
+  Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  Typography,
+} from "@mui/material";
 import { Commit } from "@mui/icons-material";
 
 function MedDev() {
@@ -30,12 +37,14 @@ function MedDev() {
       <Grid item xs={12} lg={6}>
         <List>
           {listItems.map((item) => (
-            <ListItem>
-              <ListItemIcon>
-                <Commit fontSize="small" color="primary" />
-              </ListItemIcon>
-              <Typography variant="h6">{item}</Typography>
-            </ListItem>
+            <>
+              <ListItem>
+                <ListItemIcon>
+                  <Commit fontSize="small" color="primary" />
+                </ListItemIcon>
+                <Typography variant="h6">{item}</Typography>
+              </ListItem>
+            </>
           ))}
         </List>
       </Grid>
