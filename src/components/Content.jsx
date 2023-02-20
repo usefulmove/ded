@@ -43,7 +43,7 @@ function Content() {
   };
 
   return (
-    <Box sx={{ borderBottom: 0 }}>
+    <Box sx={{ borderBottom: 0, width: "94svw" }}>
       <Tabs
         value={value}
         onChange={handleChange}

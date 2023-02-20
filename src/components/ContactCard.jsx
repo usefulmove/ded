@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 function ContactCard() {
   return (
     <Grid container>
-      <Grid item xs={12} style={{ width: "94svw" }}>
+      <Grid item xs={12}>
         <center>
           <Card className="cora" elevation={6}>
             <Grid container justifyContent="center" alignItems="center">
