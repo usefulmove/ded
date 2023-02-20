@@ -94,7 +94,13 @@ function Content() {
         className="selection-heading"
       ></TabPanel>
       <TabPanel value={value} index={5} className="selection-heading">
+        <br />
         <ContactCard />
+        <br />
+        <Typography variant="body1">
+          Please contact me if you think I might be able to help your
+          organization.
+        </Typography>
       </TabPanel>
       <br />
     </Box>
