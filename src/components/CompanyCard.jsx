@@ -17,7 +17,7 @@ function CompanyCard({ experience, icon }) {
   const CompanyIcon = icon;
 
   return (
-    <Card elevation={6} sx={{ borderRadius: 3 }}>
+    <Card elevation={6} sx={{ borderRadius: 2 }}>
       <center>
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static" color="info">

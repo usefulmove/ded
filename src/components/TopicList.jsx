@@ -12,13 +12,13 @@ function TopicList({ title, lead, listItems }) {
   return (
     <div>
       <br />
-      <Typography variant="h4" gutterBottom={true} color="secondary">
+      <Typography variant="h5" gutterBottom={true} color="secondary">
         {title}
       </Typography>
       <Divider />
       <br />
       <Typography
-        variant="h5"
+        variant="h6"
         align="left"
         gutterBottom={true}
         color="secondary"

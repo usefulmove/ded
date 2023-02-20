@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Box, Card, Tabs, Tab, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import AboutMe from "./AboutMe";
-import MedDev from "./MedDev";
-import LabAuto from "./LabAuto";
+import MedDevice from "./MedDevice";
+import LabAutomation from "./LabAutomation";
 import Compliance from "./Compliance";
 import Experience from "./Experience";
 import ContactCard from "./ContactCard";
@@ -77,10 +77,10 @@ function Content() {
         <AboutMe />
       </TabPanel>
       <TabPanel value={value} index={1} className="selection-heading">
-        <MedDev />
+        <MedDevice />
       </TabPanel>
       <TabPanel value={value} index={2} className="selection-heading">
-        <LabAuto />
+        <LabAutomation />
       </TabPanel>
       <TabPanel value={value} index={3} className="selection-heading">
         <Compliance />
