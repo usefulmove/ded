@@ -6,6 +6,7 @@ import randd from "../assets/randd.jpg";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import MedDev from "./MedDev";
+import Compliance from "./Compliance";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -71,17 +72,18 @@ function Content() {
           {...a11yProps(3)}
           sx={{ color: "#555555" }}
         />
+        <Tab label="Compliance" {...a11yProps(4)} sx={{ color: "#555555" }} />
         <Tab
           label="Coaching & Leadership"
-          {...a11yProps(4)}
+          {...a11yProps(5)}
           sx={{ color: "#555555" }}
         />
         <Tab
           label="Work Experience"
-          {...a11yProps(5)}
+          {...a11yProps(6)}
           sx={{ color: "#555555" }}
         />
-        <Tab label="Get In Touch" {...a11yProps(6)} sx={{ color: "#555555" }} />
+        <Tab label="Get In Touch" {...a11yProps(7)} sx={{ color: "#555555" }} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutMe />
@@ -97,17 +99,20 @@ function Content() {
         index={3}
         className="selection-heading"
       ></TabPanel>
-      <TabPanel
-        value={value}
-        index={4}
-        className="selection-heading"
-      ></TabPanel>
+      <TabPanel value={value} index={4} className="selection-heading">
+        <Compliance />
+      </TabPanel>
       <TabPanel
         value={value}
         index={5}
         className="selection-heading"
       ></TabPanel>
-      <TabPanel value={value} index={6} className="selection-heading">
+      <TabPanel
+        value={value}
+        index={6}
+        className="selection-heading"
+      ></TabPanel>
+      <TabPanel value={value} index={7} className="selection-heading">
         <Contact />
       </TabPanel>
       <br />

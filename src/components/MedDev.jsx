@@ -1,16 +1,9 @@
 import React from "react";
-import {
-  Divider,
-  Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  Typography,
-} from "@mui/material";
-import { Commit } from "@mui/icons-material";
+import { Grid } from "@mui/material";
+import TopicList from "./TopicList";
 
 function MedDev() {
-  const listItems = [
+  const bullets = [
     "Design Controls",
     "Project planning and management including cost and project risk management",
     "Requirements definition and management",
@@ -24,34 +17,19 @@ function MedDev() {
     "Design transfer to production and continuous improvement Documentation of Design History Files, Technical Files (Technical Documentation), documentation in support of 510(k), CE mark, and other regulatory submissions",
     "Considerable knowledge of the expectations and requirements of FDA Title 21 CFR 820 (Quality System Regulation) and Medical Device Directive 93/42/EEC, as well as ISO 13485 (Quality Management System)",
   ];
+  const blurb = `I am able to provide design support services to help your organization advance your product development, product improvement and new product introduction goals. Key areas of focus are:`;
 
   return (
-    <Grid container justifyContent="center">
-      <Grid item xs={12} lg={7}>
-        <br />
-        <Typography variant="h4" gutterBottom={true}>
-          Medical Device Development
-        </Typography>
-        <Divider />
-        <br />
-        <Typography variant="h5" align="left" gutterBottom={true}>
-          I am able to provide design support services to help your organization
-          advance your product development, product improvement and new product
-          introduction goals. Key areas of focus are:
-        </Typography>
-        <List>
-          {listItems.map((item, index) => (
-            <>
-              <ListItem key={index}>
-                <ListItemIcon>
-                  <Commit fontSize="small" color="primary" />
-                </ListItemIcon>
-                <Typography variant="h6">{item}</Typography>
-              </ListItem>
-            </>
-          ))}
-        </List>
-      </Grid>
+    <Grid container>
+      <center>
+        <Grid item xs={8}>
+          <TopicList
+            title="Medical Device Development"
+            lead={blurb}
+            listItems={bullets}
+          />
+        </Grid>
+      </center>
     </Grid>
   );
 }
