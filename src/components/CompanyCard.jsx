@@ -18,13 +18,14 @@ function CompanyCard({ experience }) {
     <Card elevation={6}>
       <center>
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static" color="primary">
+          <AppBar position="static" color="info">
             <Toolbar>
               <Typography
                 variant="h6"
                 component="div"
                 sx={{ flexGrow: 1 }}
                 align="left"
+                color="secondary"
               >
                 {experience.company}
               </Typography>
@@ -41,7 +42,7 @@ function CompanyCard({ experience }) {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography color="grey">{role.summary}</Typography>
+                  <Typography color="#aaaaaa">{role.summary}</Typography>
                   <br />
                   <Typography color="grey" variant="body2">
                     {role.span}

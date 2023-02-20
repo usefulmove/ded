@@ -18,9 +18,16 @@ const theme = createTheme({
       light: "#ffffff",
       dark: "#eeeeee",
     },
+    info: {
+      main: "#003f7e",
+    },
     background: {
-      default: "#404040",
+      main: "#303030",
+      default: "#343434",
       paper: "#404040",
+    },
+    white: {
+      main: "#ffffff",
     },
   },
 });

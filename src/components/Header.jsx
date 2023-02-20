@@ -7,7 +7,7 @@ function Header() {
         <Typography variant="h4">Duane Edmonds</Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h6" gutterBottom={true}>
+        <Typography variant="h6" gutterBottom={true} color="primary">
           Medical Devices and Laboratory Automation
         </Typography>
       </Grid>

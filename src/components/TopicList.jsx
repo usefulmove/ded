@@ -12,7 +12,7 @@ function TopicList({ title, lead, listItems }) {
   return (
     <div>
       <br />
-      <Typography variant="h4" gutterBottom={true} color="secondary">
+      <Typography variant="h4" gutterBottom={true} color="primary">
         {title}
       </Typography>
       <Divider />
