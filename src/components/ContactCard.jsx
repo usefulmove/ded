@@ -7,7 +7,7 @@ function ContactCard() {
     <Grid container>
       <Grid item xs={12}>
         <center>
-          <Card className="cora" elevation={6}>
+          <Card className="contact" elevation={6}>
             <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={5.5}>
                 <img src={logo} width={"100%"} objectfit="contain" />

@@ -3,9 +3,10 @@ import { useState } from "react";
 import { Box, Card, Tabs, Tab, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import AboutMe from "./AboutMe";
-import ContactCard from "./ContactCard";
 import MedDev from "./MedDev";
 import Compliance from "./Compliance";
+import Experience from "./Experience";
+import ContactCard from "./ContactCard";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,22 +58,18 @@ function Content() {
       >
         <Tab label="About Me" {...a11yProps(0)} sx={{ color: "#555555" }} />
         <Tab
-          label="Medical Device Development"
+          label="Medical Device"
           {...a11yProps(1)}
           sx={{ color: "#555555" }}
         />
         <Tab
-          label="Laboratory Automation"
+          label="Lab Automation"
           {...a11yProps(2)}
           sx={{ color: "#555555" }}
         />
         <Tab label="Compliance" {...a11yProps(3)} sx={{ color: "#555555" }} />
-        <Tab
-          label="Work Experience"
-          {...a11yProps(4)}
-          sx={{ color: "#555555" }}
-        />
-        <Tab label="Get In Touch" {...a11yProps(5)} sx={{ color: "#555555" }} />
+        <Tab label="Experience" {...a11yProps(4)} sx={{ color: "#555555" }} />
+        <Tab label="Contact Me" {...a11yProps(5)} sx={{ color: "#555555" }} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutMe />
@@ -88,11 +85,9 @@ function Content() {
       <TabPanel value={value} index={3} className="selection-heading">
         <Compliance />
       </TabPanel>
-      <TabPanel
-        value={value}
-        index={4}
-        className="selection-heading"
-      ></TabPanel>
+      <TabPanel value={value} index={4} className="selection-heading">
+        <Experience />
+      </TabPanel>
       <TabPanel value={value} index={5} className="selection-heading">
         <br />
         <ContactCard />

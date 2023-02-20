@@ -22,7 +22,6 @@ function Footer() {
             window.open("https://www.linkedin.com/in/dedmonds/", "_blank");
           }}
           color="primary"
-          component="label"
         >
           <LinkedIn />
         </IconButton>
@@ -33,13 +32,12 @@ function Footer() {
             window.open("https://github.com/usefulmove", "_blank");
           }}
           color="primary"
-          component="label"
         >
           <GitHub />
         </IconButton>
       </Grid>
       <Grid item>
-        <IconButton onClick={() => {}} color="primary" component="label">
+        <IconButton onClick={() => {}} color="primary">
           <EmailRounded />
         </IconButton>
       </Grid>
@@ -52,7 +50,6 @@ function Footer() {
             );
           }}
           color="primary"
-          component="label"
         >
           <CloudDownloadSharp />
         </IconButton>
