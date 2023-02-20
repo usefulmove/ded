@@ -12,12 +12,17 @@ function TopicList({ title, lead, listItems }) {
   return (
     <div>
       <br />
-      <Typography variant="h4" gutterBottom={true} color="primary">
+      <Typography variant="h4" gutterBottom={true} color="secondary">
         {title}
       </Typography>
       <Divider />
       <br />
-      <Typography variant="h5" align="left" gutterBottom={true}>
+      <Typography
+        variant="h5"
+        align="left"
+        gutterBottom={true}
+        color="secondary"
+      >
         {lead}
       </Typography>
       <List>
@@ -27,7 +32,9 @@ function TopicList({ title, lead, listItems }) {
               <ListItemIcon>
                 <Commit fontSize="small" color="primary" />
               </ListItemIcon>
-              <Typography variant="h6">{item}</Typography>
+              <Typography variant="h6" color="secondary">
+                {item}
+              </Typography>
             </ListItem>
           </>
         ))}

@@ -25,7 +25,7 @@ function CompanyCard({ experience }) {
                 component="div"
                 sx={{ flexGrow: 1 }}
                 align="left"
-                color="secondary"
+                color="#ffffff"
               >
                 {experience.company}
               </Typography>
@@ -36,13 +36,13 @@ function CompanyCard({ experience }) {
           {experience.roles.map((role, index) => (
             <ListItem key={index}>
               <Accordion sx={{ flexGrow: 1 }} elevation={3}>
-                <AccordionSummary expandIcon={<ExpandMore color="secondary" />}>
+                <AccordionSummary expandIcon={<ExpandMore color="white" />}>
                   <Typography variant="subtitle1" color="secondary">
                     {role.title}
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography color="#aaaaaa">{role.summary}</Typography>
+                  <Typography color="secondary">{role.summary}</Typography>
                   <br />
                   <Typography color="grey" variant="body2">
                     {role.span}

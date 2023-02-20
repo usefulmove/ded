@@ -92,7 +92,7 @@ function Content() {
         <br />
         <ContactCard />
         <br />
-        <Typography variant="body1">
+        <Typography variant="body1" color="secondary">
           Please contact me if you think I might be able to help your
           organization.
         </Typography>

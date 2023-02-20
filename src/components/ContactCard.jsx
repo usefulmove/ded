@@ -13,18 +13,18 @@ function ContactCard() {
                 <img src={logo} width={"100%"} objectfit="contain" />
               </Grid>
               <Grid item xs>
-                <Typography variant="h5" color="secondary" gutterBottom={true}>
+                <Typography variant="h5" color="black" gutterBottom={true}>
                   Robert Duane Edmonds
                 </Typography>
-                <Typography variant="h6" color="secondary" gutterBottom={true}>
+                <Typography variant="h6" color="black" gutterBottom={true}>
                   2208 Carroll Street #102
                   <br />
                   Oakland, CA 94606
                 </Typography>
-                <Typography variant="h6" color="secondary" gutterBottom={true}>
+                <Typography variant="h6" color="black" gutterBottom={true}>
                   +1 510 393 4416
                 </Typography>
-                <Typography variant="h6" color="secondary">
+                <Typography variant="h6" color="black">
                   duane@dedmonds.co
                 </Typography>
               </Grid>
