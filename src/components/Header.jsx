@@ -10,7 +10,7 @@ function Header() {
       </Grid>
       <Grid item xs={12}>
         <Typography variant="h6" gutterBottom={true}>
-          Medical Device and Lab Automation Professional
+          Medical Devices and Laboratory Automation
         </Typography>
       </Grid>
       <Grid item xs={12}></Grid>
