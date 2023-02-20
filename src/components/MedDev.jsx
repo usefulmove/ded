@@ -34,7 +34,7 @@ function MedDev() {
         </Typography>
         <Divider />
         <br />
-        <Typography variant="h6" align="left" gutterBottom={true}>
+        <Typography variant="h5" align="left" gutterBottom={true}>
           I am able to provide design support services to help your organization
           advance your product development, product improvement and new product
           introduction goals. Key areas of focus are:
