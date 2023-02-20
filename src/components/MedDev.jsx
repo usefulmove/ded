@@ -26,19 +26,17 @@ function MedDev() {
   ];
 
   return (
-    <Grid container>
-      <Grid item xs={12} lg={6}>
-        <Typography variant="h6" align="left">
+    <Grid container justifyContent="center">
+      <Grid item xs={12} lg={8}>
+        <Typography variant="h6" align="left" gutterBottom="true">
           I am able to provide design support services to help your organization
           advance your product development, product improvement and new product
           introduction goals. Key areas of focus are:
         </Typography>
-      </Grid>
-      <Grid item xs={12} lg={6}>
         <List>
-          {listItems.map((item) => (
+          {listItems.map((item, index) => (
             <>
-              <ListItem>
+              <ListItem key={index}>
                 <ListItemIcon>
                   <Commit fontSize="small" color="primary" />
                 </ListItemIcon>
