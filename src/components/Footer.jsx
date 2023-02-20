@@ -1,7 +1,7 @@
 import { Grid, IconButton } from "@mui/material";
 import {
-  AlternateEmailRounded,
-  AccountCircleOutlined,
+  EmailRounded,
+  LinkedIn,
   GitHub,
   CloudDownloadSharp,
 } from "@mui/icons-material";
@@ -23,12 +23,12 @@ function Footer() {
             window.open("https://www.linkedin.com/in/dedmonds/", "_blank");
           }}
         >
-          <DeIconButton icon={AccountCircleOutlined} />
+          <DeIconButton icon={LinkedIn} />
         </IconButton>
       </Grid>
       <Grid item>
         <IconButton onClick={() => {}}>
-          <DeIconButton icon={AlternateEmailRounded} />
+          <DeIconButton icon={EmailRounded} />
         </IconButton>
       </Grid>
       <Grid item>
