@@ -24,7 +24,7 @@ function MedDevice() {
     <Grid container>
       <center>
         <Grid item xs={8}>
-          <MedicalServices fontSize="large" color="secondary" />
+          <MedicalServices fontSize="medium" color="secondary" />
           <TopicList
             title="Medical Device Development"
             lead={blurb}

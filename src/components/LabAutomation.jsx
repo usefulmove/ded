@@ -14,7 +14,7 @@ function LabAutomation() {
     <Grid container>
       <center>
         <Grid item xs={8}>
-          <ScienceSharp fontSize="large" color="secondary" />
+          <ScienceSharp fontSize="medium" color="secondary" />
           <TopicList
             title="Laboratory Automation"
             lead={blurb}

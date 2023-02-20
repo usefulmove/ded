@@ -21,7 +21,7 @@ function Compliance() {
     <Grid container>
       <center>
         <Grid item xs={8}>
-          <PublicSharp fontSize="large" color="secondary" />
+          <PublicSharp fontSize="medium" color="secondary" />
           <TopicList
             title="Regulatory Compliance"
             lead={blurb}

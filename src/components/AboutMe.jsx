@@ -1,6 +1,6 @@
 import React from "react";
 import Summary from "./Summary";
-import ProfessionalPhoto from "./ProfessionalPhoto";
+import ProPhoto from "./ProPhoto";
 import { Grid } from "@mui/material";
 
 function AboutMe() {
@@ -10,7 +10,7 @@ function AboutMe() {
         <Summary />
       </Grid>
       <Grid item xs={12} lg={6}>
-        <ProfessionalPhoto />
+        <ProPhoto />
       </Grid>
     </Grid>
   );

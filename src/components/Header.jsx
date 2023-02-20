@@ -9,7 +9,7 @@ function Header() {
         </Typography>
       </Grid>
       <Grid item xs={12}>
-        <Typography variant="h6" gutterBottom={true} color="primary">
+        <Typography variant="h6" gutterBottom={true} color="#888888">
           Medical Devices and Laboratory Automation
         </Typography>
       </Grid>

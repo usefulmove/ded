@@ -59,34 +59,34 @@ function Content() {
         }}
       >
         <Tab label="About Me" {...a11yProps(0)} sx={{ color: "#737373" }} />
+        <Tab label="Experience" {...a11yProps(1)} sx={{ color: "#737373" }} />
         <Tab
           label="Medical Device"
-          {...a11yProps(1)}
+          {...a11yProps(2)}
           sx={{ color: "#737373" }}
         />
         <Tab
           label="Lab Automation"
-          {...a11yProps(2)}
+          {...a11yProps(3)}
           sx={{ color: "#737373" }}
         />
-        <Tab label="Compliance" {...a11yProps(3)} sx={{ color: "#737373" }} />
-        <Tab label="Experience" {...a11yProps(4)} sx={{ color: "#737373" }} />
+        <Tab label="Compliance" {...a11yProps(4)} sx={{ color: "#737373" }} />
         <Tab label="Contact Me" {...a11yProps(5)} sx={{ color: "#737373" }} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutMe />
       </TabPanel>
       <TabPanel value={value} index={1} className="selection-heading">
-        <MedDevice />
+        <Experience />
       </TabPanel>
       <TabPanel value={value} index={2} className="selection-heading">
-        <LabAutomation />
+        <MedDevice />
       </TabPanel>
       <TabPanel value={value} index={3} className="selection-heading">
-        <Compliance />
+        <LabAutomation />
       </TabPanel>
       <TabPanel value={value} index={4} className="selection-heading">
-        <Experience />
+        <Compliance />
       </TabPanel>
       <TabPanel value={value} index={5} className="selection-heading">
         <ContactCard />
