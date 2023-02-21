@@ -10,7 +10,7 @@ function ContactCard() {
           <Card
             className="contact-card"
             elevation={6}
-            sx={{ borderRadius: 3, border: 0, borderColor: "primary.main" }}
+            sx={{ borderRadius: 3, border: 1, borderColor: "black" }}
           >
             <Grid container justifyContent="space-evenly" alignItems="center">
               <Grid item xs={1} md={5.8}>
