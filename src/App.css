@@ -4,6 +4,7 @@
 }
 
 .contact-card {
-  width: 700px;
+  width: 50vw;
+  max-width: 650px;
   padding: 25px;
 }
