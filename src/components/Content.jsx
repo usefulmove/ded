@@ -4,8 +4,8 @@ import { Box, Card, Tabs, Tab, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import AboutMe from "./AboutMe";
 import MedDevice from "./MedDevice";
-import LabAutomation from "./LabAutomation";
 import Compliance from "./Compliance";
+import BI from "./BusinessAnalytics";
 import Experience from "./Experience";
 import ContactCard from "./ContactCard";
 import { GroupsSharp } from "@mui/icons-material";
@@ -65,12 +65,12 @@ function Content() {
           {...a11yProps(2)}
           sx={{ color: "#737373" }}
         />
+        <Tab label="Compliance" {...a11yProps(3)} sx={{ color: "#737373" }} />
         <Tab
-          label="Lab Automation"
-          {...a11yProps(3)}
+          label="Business Analytics"
+          {...a11yProps(4)}
           sx={{ color: "#737373" }}
         />
-        <Tab label="Compliance" {...a11yProps(4)} sx={{ color: "#737373" }} />
         <Tab label="Contact Me" {...a11yProps(5)} sx={{ color: "#737373" }} />
       </Tabs>
       <TabPanel value={value} index={0}>
@@ -83,10 +83,10 @@ function Content() {
         <MedDevice />
       </TabPanel>
       <TabPanel value={value} index={3} className="selection-heading">
-        <LabAutomation />
+        <Compliance />
       </TabPanel>
       <TabPanel value={value} index={4} className="selection-heading">
-        <Compliance />
+        <BI />
       </TabPanel>
       <TabPanel value={value} index={5} className="selection-heading">
         <ContactCard />
