@@ -13,7 +13,7 @@ function LabAutomation() {
   return (
     <Grid container>
       <center>
-        <Grid item xs={8}>
+        <Grid item xs={12} lg={8}>
           <ScienceSharp fontSize="medium" color="secondary" />
           <TopicList
             title="Laboratory Automation"

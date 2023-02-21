@@ -20,7 +20,7 @@ function Compliance() {
   return (
     <Grid container>
       <center>
-        <Grid item xs={8}>
+        <Grid item xs={12} lg={8}>
           <PublicSharp fontSize="medium" color="secondary" />
           <TopicList
             title="Regulatory Compliance"

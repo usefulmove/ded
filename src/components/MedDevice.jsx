@@ -23,7 +23,7 @@ function MedDevice() {
   return (
     <Grid container>
       <center>
-        <Grid item xs={8}>
+        <Grid item xs={12} lg={8}>
           <MedicalServices fontSize="medium" color="secondary" />
           <TopicList
             title="Medical Device Development"

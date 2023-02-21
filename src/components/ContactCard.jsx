@@ -13,10 +13,10 @@ function ContactCard() {
             sx={{ borderRadius: 3, border: 2, borderColor: "primary.main" }}
           >
             <Grid container justifyContent="center" alignItems="center">
-              <Grid item xs={5.9}>
+              <Grid item xs={1} md={5.8}>
                 <img src={logo} width={"100%"} objectfit="contain" />
               </Grid>
-              <Grid item xs>
+              <Grid item xs={12} md>
                 <Typography variant="h6" color="primary" gutterBottom={true}>
                   Robert Duane Edmonds
                 </Typography>

@@ -5,9 +5,8 @@ import { Grid, Typography } from "@mui/material";
 function Summary() {
   return (
     <Grid container spacing={8} padding={5}>
-      <Grid container>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+      <Grid container justifyContent="center">
+        <Grid item xs={12} md={10}>
           <Typography variant="h6" align="center" color="secondary">
             Experienced product development professional with more than 23 years
             of experience and 14 years in the medical device and lab automation
@@ -20,7 +19,6 @@ function Summary() {
             analytics, quality management, and global compliance.
           </Typography>
         </Grid>
-        <Grid item xs={2}></Grid>
       </Grid>
       <Grid item xs={12}>
         <img src={signature} height={60} />
