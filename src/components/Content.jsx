@@ -55,7 +55,7 @@ function Content() {
         centered
         variant="fullWidth"
         sx={{
-          "& button:hover": { color: "#0080ff" },
+          "& button:hover": { color: "#91a8d0" },
         }}
       >
         <Tab label="About Me" {...a11yProps(0)} sx={{ color: "#737373" }} />
