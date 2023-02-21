@@ -10,25 +10,25 @@ function ContactCard() {
           <Card
             className="contact-card"
             elevation={6}
-            sx={{ borderRadius: 3, border: 2, borderColor: "primary.main" }}
+            sx={{ borderRadius: 3, border: 0, borderColor: "primary.main" }}
           >
-            <Grid container justifyContent="center" alignItems="center">
+            <Grid container justifyContent="space-evenly" alignItems="center">
               <Grid item xs={1} md={5.8}>
                 <img src={logo} width={"100%"} objectfit="contain" />
               </Grid>
               <Grid item xs={12} md>
-                <Typography variant="h6" color="primary" gutterBottom={true}>
+                <Typography variant="body1" color="secondary">
                   Robert Duane Edmonds
-                </Typography>
-                <Typography variant="h6" color="primary" gutterBottom={true}>
-                  2208 Carroll Street #102
+                  <br />
+                  <br />
+                  2208 Carroll St. #102
                   <br />
                   Oakland, CA 94606
-                </Typography>
-                <Typography variant="h6" color="primary" gutterBottom={true}>
+                  <br />
+                  <br />
                   +1 510 393 4416
-                </Typography>
-                <Typography variant="h6" color="primary">
+                  <br />
+                  <br />
                   duane@dedmonds.co
                 </Typography>
               </Grid>
