@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  Typography,
-  Divider,
-} from "@mui/material";
+import { List, ListItem, ListItemIcon, Typography } from "@mui/material";
 import { Commit } from "@mui/icons-material";
 
 function TopicList({ title, lead, listItems }) {
@@ -15,7 +9,6 @@ function TopicList({ title, lead, listItems }) {
       <Typography variant="h5" gutterBottom={true} color="secondary">
         {title}
       </Typography>
-      <Divider />
       <br />
       <Typography
         variant="h6"

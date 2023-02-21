@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 function ContactCard() {
   return (
-    <Grid container>
+    <Grid container padding={4}>
       <Grid item xs={12}>
         <center>
           <Card
