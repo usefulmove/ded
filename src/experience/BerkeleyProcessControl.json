@@ -1,0 +1,15 @@
+{
+  "company": "Berkeley Process Control",
+  "roles": [
+    {
+      "title": "Project Manager",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+      "span": "Sep 2021 - Aug 2022"
+    },
+    {
+      "title": "Controls Engineer",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+      "span": "Sep 2021 - Aug 2022"
+    }
+  ]
+}

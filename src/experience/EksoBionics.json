@@ -1,0 +1,20 @@
+{
+  "company": "Ekso Bionics",
+  "roles": [
+    {
+      "title": "Director of R&D and Compliance",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+      "span": "Mar 2015 - Sep 2019"
+    },
+    {
+      "title": "Director of Software Engineering",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+      "span": "Sep 2021 - Aug 2022"
+    },
+    {
+      "title": "Program Manager",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+      "span": "Sep 2021 - Aug 2022"
+    }
+  ]
+}

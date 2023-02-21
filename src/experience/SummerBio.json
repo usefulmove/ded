@@ -1,0 +1,15 @@
+{
+  "company": "SummerBio",
+  "roles": [
+    {
+      "title": "Vice President of Engineering",
+      "summary": "Managed automation engineering, cloud computing and laboratory information managemen systems (LIMS) engineering teams, as well as program management. Committed to making a difference in fast-turnaround, high-availability and high-throughput SARS-CoV-2 (COVID-19) qRT-PCR (quantitative reverse transcription PCR) clinical diagnostics",
+      "span": "Jan 2022 - Aug 2022"
+    },
+    {
+      "title": "Director of Automation",
+      "summary": "Managed the development, implementation, verification and assay validation of a variable-ratio, high-throughput automate sample pooling system",
+      "span": "Aug 2021 - Jan 2022"
+    }
+  ]
+}
