@@ -4,7 +4,7 @@ import { Grid, Typography } from "@mui/material";
 
 function Summary() {
   return (
-    <Grid container spacing={8} padding={5}>
+    <Grid container spacing={8} padding={4}>
       <Grid container justifyContent="center">
         <Grid item xs={12} md={10}>
           <Typography variant="h6" align="center" color="secondary">
@@ -21,7 +21,7 @@ function Summary() {
         </Grid>
       </Grid>
       <Grid item xs={12}>
-        <img src={signature} height={60} />
+        <img src={signature} height={90} />
       </Grid>
     </Grid>
   );
