@@ -17,7 +17,10 @@ function CompanyCard({ experience, icon }) {
   const CompanyIcon = icon;
 
   return (
-    <Card elevation={6} sx={{ borderRadius: 2 }}>
+    <Card
+      elevation={6}
+      sx={{ borderRadius: 2, border: 1, borderColor: "black" }}
+    >
       <center>
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static" color="info">
@@ -47,7 +50,7 @@ function CompanyCard({ experience, icon }) {
                 <AccordionDetails>
                   <Typography color="secondary">{role.summary}</Typography>
                   <br />
-                  <Typography color="grey" variant="body2">
+                  <Typography color="primary" variant="body2">
                     {role.span}
                   </Typography>
                 </AccordionDetails>
